@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/"
-  to = "https://siegemedia.com/contrast-ratio"
-  status = 301
-  force = true
