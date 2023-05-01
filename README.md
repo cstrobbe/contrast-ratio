@@ -6,6 +6,10 @@ and ownership of the GitHub repository was transferred from the original develop
 (See [Contrast Ratio has a new home — and this is great news!](https://lea.verou.me/2023/03/contrast-ratio-new-home/) (18.03.2023)
 on Lea Verou's website.)
 
+## Online Version
+
+Temporarily hosted on [GitHub Pages](https://cstrobbe.github.io/contrast-ratio/).
+
 ## Licence
 
 [MIT License](MIT-LICENSE), i.e. the same licence that has always applied to the tool.
