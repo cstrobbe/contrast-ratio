@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-	<meta charset="utf-8" />
-	<title>Contrast Ratio: Easily calculate WCAG contrast ratios</title>
-	<link rel="stylesheet" href="style.css" />
-	<link rel="shortcut icon" type="image/png" href="about:blank" />
+  <meta charset="utf-8" />
+  <title>Contrast Ratio: Easily calculate WCAG contrast ratios</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
 </head>
 <body>
 
@@ -14,60 +15,61 @@
     </a>
     </h1>
 
-	<label class="background">
-		<span>Background:</span>
-		<div class="input-wrapper">
-			<input id="background" class="text-input" value="white" autofocus />
-			<input id="backgroundColorPicker" class="color-picker" type="color" tabindex="-1" />
-		</div>
-		<output for="background foreground" class="rl" aria-live="polite" aria-label="Relative Luminance"></output>
-	</label>
+  <label class="background">
+    <span>Background:</span>
+    <div class="input-wrapper">
+      <input id="background" class="text-input" value="white" autofocus />
+      <input id="backgroundColorPicker" class="color-picker" type="color" tabindex="-1" />
+    </div>
+    <output for="background foreground" class="rl" aria-live="polite" aria-label="Relative Luminance"></output>
+  </label>
 
-	<label class="foreground">
-		<span>Text colour:</span>
-		<div class="input-wrapper">
-			<input id="foreground" class="text-input" value="hsla(200,0%,0%,.7)" />
-			<input id="foregroundColorPicker" class="color-picker" type="color" tabindex="-1" />
-		</div>
-		<output for="background foreground" class="rl" aria-live="polite" aria-label="Relative Luminance"></output>
-	</label>
+  <label class="foreground">
+    <span>Text colour:</span>
+    <div class="input-wrapper">
+      <input id="foreground" class="text-input" value="hsla(200,0%,0%,.7)" />
+      <input id="foregroundColorPicker" class="color-picker" type="color" tabindex="-1" />
+    </div>
+    <output for="background foreground" class="rl" aria-live="polite" aria-label="Relative Luminance"></output>
+  </label>
 
-	<output for="background foreground" class="contrast" tabindex="0" aria-live="polite">
-		<strong>?</strong>
-		<span class="error"></span>
-	</output>
+  <output for="background foreground" class="contrast" tabindex="0" aria-live="polite">
+    <strong>?</strong>
+    <span class="error"></span>
+  </output>
 
-	<section id="results">
-		<output for="background foreground" id="preciseContrast" aria-label="Precise contrast"></output>
-		<output for="background foreground" id="wcag"></output>
-	</section>
+  <section id="results">
+    <output for="background foreground" id="preciseContrast" aria-label="Precise contrast"></output>
+    <output for="background foreground" id="wcag"></output>
+  </section>
 
-	<section class="color-display" id="backgroundDisplay">
-		<h1>How to use</h1>
-		<p>As you type, the contrast ratio indicated will update. Hover over the circle to get more detailed information.
-			When semi-transparent colours are involved as backgrounds, the contrast ratio will have an error margin, to account
-			for the different colours they may be over.</p>
-		<p style="font-family: Garamond, 'Palatino Linotype', Georgia, serif;">This sample text attempts to visually
-			demonstrate how readable this colour combination is, for normal, <span style="font-style: italic;">italic</span>,
-			<span style="font-weight: bold;">bold</span>, or <span style="font-style: italic; font-weight: bold;">bold
-				italic</span> text of various sizes and font styles.
-		</p>
-		<p style="font-size: 11pt;"><strong>Hint:</strong> Press the up and down keyboard arrows while over a number inside
-			a functional colour notation. Watch it increment/decrement. Try with the <kbd>Shift</kbd> or <kbd>Alt</kbd> key too!
+  <section class="color-display" id="backgroundDisplay">
+    <h1>How to use</h1>
+    <p>As you type, the contrast ratio indicated will update. Hover over the circle to get more detailed information.
+    When semi-transparent colours are involved as backgrounds, the contrast ratio will have an error margin, to account
+    for the different colours they may be over.
     </p>
-	<footer>
-			Originally created by <a href="https://lea.verou.me/" rel="noopener">Lea Verou</a>
-			&bull;
-      <a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast"><abbr>WCAG</abbr> 2 on contrast ratio</a>
+    <p style="font-family: Garamond, 'Palatino Linotype', Georgia, serif;">This sample text attempts to visually
+    demonstrate how readable this colour combination is, for normal, <span style="font-style: italic;">italic</span>,
+    <span style="font-weight: bold;">bold</span>, or <span style="font-style: italic; font-weight: bold;">bold italic</span>
+    text of various sizes and font styles.
+    </p>
+    <p style="font-size: 11pt;"><strong>Hint:</strong> Press the up and down keyboard arrows while over a number inside
+    a functional colour notation. Watch it increment/decrement. Try with the <kbd>Shift</kbd> or <kbd>Alt</kbd> key too!
+    </p>
+  <footer>
+    Originally created by <a href="https://lea.verou.me/" rel="noopener">Lea Verou</a>
+    &bull;
+    <a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast"><abbr>WCAG</abbr> 2 on contrast ratio</a>
   </footer>
-	</section>
-	<section class="color-display" id="foregroundDisplay">
-		<button id="swap">↔ Swap colours</button>
-	</section>
+  </section>
+  <section class="color-display" id="foregroundDisplay">
+    <button id="swap">↔ Swap colours</button>
+  </section>
 
-	<script src="https://leaverou.github.io/incrementable/incrementable.js" id="incrementable" async></script>
-	<script src="color.js"></script>
-	<script src="contrast-ratio.js"></script>
+  <script src="https://leaverou.github.io/incrementable/incrementable.js" id="incrementable" async></script>
+  <script src="color.js"></script>
+  <script src="contrast-ratio.js"></script>
 
 </body>
 </html>
