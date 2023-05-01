@@ -1,29 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-GB">
 <head>
-
 	<meta charset="utf-8" />
-	<title>Contrast Ratio: Easily calculate color contrast ratios. Passing WCAG was never this easy!</title>
+	<title>Contrast Ratio: Easily calculate WCAG contrast ratios</title>
 	<link rel="stylesheet" href="style.css" />
 	<link rel="shortcut icon" type="image/png" href="about:blank" />
-
 </head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NL5QBPSX6M"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag() { dataLayer.push(arguments); }
-	gtag('js', new Date());
-
-	gtag('config', 'G-NL5QBPSX6M');
-</script>
-
 <body>
 
-	<h1><a href="#">
-			<div><span>Contrast</span></div>
-			<div><strong>ratio</strong></div>
-		</a></h1>
+    <h1><a href="#">
+      <div><span>Contrast</span></div>
+      <div><strong>ratio</strong></div>
+    </a>
+    </h1>
 
 	<label class="background">
 		<span>Background:</span>
@@ -35,7 +24,7 @@
 	</label>
 
 	<label class="foreground">
-		<span>Text color:</span>
+		<span>Text colour:</span>
 		<div class="input-wrapper">
 			<input id="foreground" class="text-input" value="hsla(200,0%,0%,.7)" />
 			<input id="foregroundColorPicker" class="color-picker" type="color" tabindex="-1" />
@@ -56,47 +45,29 @@
 	<section class="color-display" id="backgroundDisplay">
 		<h1>How to use</h1>
 		<p>As you type, the contrast ratio indicated will update. Hover over the circle to get more detailed information.
-			When semi-transparent colors are involved as backgrounds, the contrast ratio will have an error margin, to account
-			for the different colors they may be over.</p>
+			When semi-transparent colours are involved as backgrounds, the contrast ratio will have an error margin, to account
+			for the different colours they may be over.</p>
 		<p style="font-family: Garamond, 'Palatino Linotype', Georgia, serif;">This sample text attempts to visually
-			demonstrate how readable this color combination is, for normal, <span style="font-style: italic;">italic</span>,
+			demonstrate how readable this colour combination is, for normal, <span style="font-style: italic;">italic</span>,
 			<span style="font-weight: bold;">bold</span>, or <span style="font-style: italic; font-weight: bold;">bold
 				italic</span> text of various sizes and font styles.
 		</p>
 		<p style="font-size: 11pt;"><strong>Hint:</strong> Press the up and down keyboard arrows while over a number inside
-			a functional color notation. Watch it increment/decrement. Try with the Shift or Alt key too!</p>
-		<footer>
-			By <a href="http://lea.verou.me" rel="noopener" target="_blank">Lea Verou</a>
-			&bull; <a href="https://www.w3.org/TR/WCAG/#contrast-minimum" rel="noopener" target="_blank">WCAG 2.1 on contrast
-				ratio</a>
-
-		</footer>
+			a functional colour notation. Watch it increment/decrement. Try with the <kbd>Shift</kbd> or <kbd>Alt</kbd> key too!
+    </p>
+	<footer>
+			Originally created by <a href="https://lea.verou.me/" rel="noopener">Lea Verou</a>
+			&bull;
+      <a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast"><abbr>WCAG</abbr> 2 on contrast ratio</a>
+  </footer>
 	</section>
 	<section class="color-display" id="foregroundDisplay">
-		<button id="swap">↔ Swap colors</button>
+		<button id="swap">↔ Swap colours</button>
 	</section>
-	<div class="siege-media-cta">
-		<a href="https://www.siegemedia.com">
-			<img src="./sm-logo.svg" class="siege-media-logo" alt="Siege Media logo" />
-		</a>
-		<div>
-			<p>Contrast Ratio has joined the Siege Media content marketing family.</p>
-			<p class="siege-link"><b><a href="https://www.siegemedia.com">Learn About Siege Media</a></b></p>
-		</div>
-	</div>
-	<footer></footer>
 
 	<script src="https://leaverou.github.io/incrementable/incrementable.js" id="incrementable" async></script>
 	<script src="color.js"></script>
 	<script src="contrast-ratio.js"></script>
 
-	<div class="social">
-		<a class="github-button" href="https://github.com/siege-media/contrast-ratio" data-icon="octicon-star"
-			data-size="large" data-show-count="true" aria-label="Star siege-media/contrast-ratio on GitHub">Star</a>
-	</div>
-
-	<!-- Place this tag in your head or just before your close body tag. -->
-	<script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
-
 </html>
